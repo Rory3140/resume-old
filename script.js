@@ -1,3 +1,5 @@
+console.log("script.js Linked");
+
 window.onscroll = function() {stickyFunction()};
 
 var navbar = document.querySelector('#navbar');
@@ -10,5 +12,3 @@ function stickyFunction() {
     navbar.classList.remove("sticky");
   }
 }
-
-console.log("Test Log");
