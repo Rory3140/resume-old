@@ -1,14 +1,29 @@
 console.log("script.js Linked");
 
-window.onscroll = function() {stickyFunction()};
+// Scroll on link click
+function scrollAbove(id, margin = 48) {
+  var element = document.querySelector(id);
+  let dims = element.getBoundingClientRect();
+  window.scrollTo(window.scrollX, dims.top + window.scrollY - margin);
+}
 
 var navbar = document.querySelector('#navbar');
-var sticky = navbar.offsetTop;
+//var titlePage = document.querySelector('#title');
+var navDim = navbar.offsetTop;
+//var titleDim = titlePage.offsetHeight - navbar.offsetHeight;
 
-function stickyFunction() {
-  if (window.pageYOffset >= sticky) {
+window.onscroll = function () {
+  // Sticky navbar
+  if (window.pageYOffset >= navDim) {
     navbar.classList.add("sticky")
   } else {
     navbar.classList.remove("sticky");
   }
-}
+
+  // if (window.pageYOffset >= titleDim) {
+  //   console.log("test");
+  // }
+};
+
+
+

@@ -7,23 +7,26 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<header>
   <div id="navbar">
     <a href="#contact">Contact</a>
-    <a href="#skills">Skills</a>
-    <a href="#education">Education</a>
+    <a onclick="scrollAbove('#about')">Skills</a>
+    <a onclick="scrollAbove('#education')">Education</a>
     <a href="#title">Home</a>
   </div>
 
   <div id="title">
     <p>Hi there, I'm <b>Rory Wood</b>.</p>
     <div id="titleLinks">
-      <a href="#about">About Me</a>
+      <a onclick="scrollAbove('#about')">About Me</a>
       <a href="#contact">Contact Me</a>
     </div>
     <div class="scroll-down"></div>
   </div>
+</header>
 
+
+<body>
   <div class="section" id="about">
     <h2>About Me</h2>
     <p>I am a outgoing </p>
@@ -32,23 +35,15 @@
   <div class="section">
     <h2>Work Experience</h2>
     <div id="work-experience">
-      <ul>
-        <li>
-          <h3>Job Title - Company Name</h3>
-          <p>A brief description of your job responsibilities and accomplishments goes here.</p>
-        </li>
-      </ul>
+      <h3>Job Title - Company Name</h3>
+      <p>A brief description of your job responsibilities and accomplishments goes here.</p>
     </div>
   </div>
 
   <div class="section" id="education">
     <h2>Education</h2>
-    <ul>
-      <li>
-        <h3>Degree - Institution Name</h3>
-        <p>A brief description of your educational background and achievements goes here.</p>
-      </li>
-    </ul>
+    <h3>Degree - Institution Name</h3>
+    <p>A brief description of your educational background and achievements goes here.</p>
   </div>
 
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

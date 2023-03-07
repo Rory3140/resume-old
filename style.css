@@ -1,23 +1,29 @@
 * {
   margin: 0px;
   padding: 0px;
+
+  font-family: "Open Sans", verdana, arial, sans-serif;
+  letter-spacing: normal;
+  color: #fff;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: "Open Sans", verdana, arial, sans-serif;
-  letter-spacing: normal;
+header {
   background-color: #2d383c;
-  color: #fff;
+}
+
+body {
+  background-image: linear-gradient(to right top, #39ace7, #2fa2da, #2598ce, #188ec1, #0784b5);
 }
 
 #navbar {
   overflow: hidden;
   z-index: 2;
-  background-color: 	#414c50;
+
+  background-color: rgba(65, 76, 80, 0.75);
 }
 
 #navbar a {
@@ -25,9 +31,9 @@ body {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 15px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 #navbar a:hover {
@@ -62,7 +68,7 @@ body {
   color: #fff;
 }
 
-#title p b{
+#title p b {
   color: #39ace7;
 }
 
@@ -90,9 +96,24 @@ body {
   display: block;
   width: 13px;
   height: 13px;
+
   border-bottom: 3px solid #fff;
   border-right: 3px solid #fff;
   transform: translate(-50%, 0%) rotate(45deg);
 }
 
+.spacer {
+  width: 100%;
+  height: 75px;
 
+  background-image: linear-gradient(to right top, #39ace7, #2fa2da, #2598ce, #188ec1, #0784b5);
+}
+
+.section {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: #2d383c;
+
+  background-color: #2d383c;
+}
