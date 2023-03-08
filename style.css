@@ -4,11 +4,16 @@
 
   font-family: "Open Sans", verdana, arial, sans-serif;
   letter-spacing: normal;
+  list-style-type: none;
   color: #fff;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
@@ -23,7 +28,7 @@ body {
   overflow: hidden;
   z-index: 2;
 
-  background-color: rgba(65, 76, 80, 0.75);
+  background-color: rgba(65, 76, 80, 1);
 }
 
 #navbar a {
@@ -32,7 +37,6 @@ body {
   color: #f2f2f2;
   text-align: center;
   padding: 15px 16px;
-  text-decoration: none;
   font-size: 15px;
 }
 

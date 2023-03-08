@@ -1,7 +1,7 @@
 console.log("script.js Linked");
 
 // Scroll on link click
-function scrollAbove(id, margin = 48) {
+function scrollAbove(id, margin = 68) {
   var element = document.querySelector(id);
   let dims = element.getBoundingClientRect();
   window.scrollTo(window.scrollX, dims.top + window.scrollY - margin);
