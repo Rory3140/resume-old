@@ -25,8 +25,9 @@ body {
 }
 
 #navbar {
-  overflow: hidden;
-  z-index: 2;
+  display: flex;
+  flex-wrap: nowrap;
+  z-index: 1;
 
   background-color: rgba(65, 76, 80, 1);
 }
@@ -38,6 +39,7 @@ body {
   text-align: center;
   padding: 15px 16px;
   font-size: 15px;
+  cursor: pointer;
 }
 
 #navbar a:hover {
@@ -86,6 +88,7 @@ body {
   text-decoration: none;
   width: 150px;
   border-radius: 8px;
+  cursor: pointer;
 
   color: #fff;
   background-color: #0784b5;
@@ -134,6 +137,14 @@ body {
   margin: 20px;
 }
 
+.content h3 {
+  margin: 10px;
+}
+
+.content h4 {
+  margin: 10px;
+}
+
 #about img {
   align-self: center;
 
@@ -156,9 +167,10 @@ body {
 #coding-skills div {
   margin: 10px;
   padding: 5px;
+
+  cursor: pointer;
 }
 
 #coding-skills div:hover {
   opacity: 0.5;
 }
-
