@@ -55,6 +55,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  white-space: nowrap;
 
   height: 100vh;
   width: 100%;
@@ -96,6 +97,7 @@ body {
 
 .scroll-down {
   position: absolute;
+  
   bottom: 20px;
   display: block;
   width: 13px;
@@ -106,22 +108,36 @@ body {
   transform: translate(-50%, 0%) rotate(45deg);
 }
 
-.spacer {
-  width: 100%;
-  height: 75px;
-
-  background-image: linear-gradient(to right top, #39ace7, #2fa2da, #2598ce, #188ec1, #0784b5);
-}
-
 .section {
   margin: 20px;
   padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  margin: 20px;
+  padding: 20px;
+  width: 85%;
+
   border-radius: 10px;
   box-shadow: #2d383c;
 
   background-color: #2d383c;
 }
 
-.section h2 {
+.content h2 {
   margin: 20px;
 }
+
+#about img {
+  align-self: center;
+
+  width: 20%;
+  min-width: 20%;
+  border-radius: 100%;
+}
+
