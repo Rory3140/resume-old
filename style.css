@@ -158,6 +158,15 @@ body {
   padding: 15px;
 }
 
+.spacer {
+  display: block;
+  background: #0784b5;
+  width: 25%;
+  height: 4px;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+
 #about img {
   align-self: center;
 
