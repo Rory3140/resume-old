@@ -238,6 +238,9 @@ footer {
   margin-top: 100px;
   height: 300px;
   background-color: #192428;
+
+  text-align: center;
+  padding: 100px;
 }
 
 @keyframes fadeIn {
